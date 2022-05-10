@@ -12,6 +12,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
+import javax.persistence.OneToMany;
 import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
 import javax.persistence.Table;
@@ -20,8 +21,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Getter
 @Setter
+@Getter
 @NoArgsConstructor
 @Entity
 @Table(name = "carreras",schema =  "universidad")
@@ -46,13 +47,14 @@ public class Carrera implements Serializable
 	@Column(name="fecha_modificacion")
 	private Date fechaModificacion;
 	
+	@OneToMany(mappedBy = "carrera", fetch = FetchType.LAZY)
+	private Set<Alumno> alumnos;
+	
 	@ManyToMany(mappedBy = "carreras", fetch = FetchType.LAZY)
 	private Set<Profesor> profesores;
 	
-	@ManyToMany(mappedBy = "carrera", fetch = FetchType.LAZY)
-	private Set<Alumno> alumnos;
-	
-	public Carrera(Integer id, String nombre, Integer cantidadMaterias, Integer cantidadAnios) {
+	public Carrera(Integer id, String nombre, Integer cantidadMaterias, Integer cantidadAnios) 
+	{
 		this.id = id;
 		this.nombre = nombre;
 		this.cantidadMaterias = cantidadMaterias;

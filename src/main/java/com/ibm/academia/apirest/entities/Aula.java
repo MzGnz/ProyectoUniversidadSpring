@@ -26,8 +26,8 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
-@Getter
 @Setter
+@Getter
 @NoArgsConstructor
 @ToString
 @Entity
@@ -41,6 +41,7 @@ public class Aula implements Serializable
 	@Column(name = "numero_aula", nullable = false)
 	private Integer numeroAula;
 	
+	@Column(name = "medidas")
 	private String medidas;
 	
 	@Column(name = "cantidad_pupitres")

@@ -1,7 +1,5 @@
 package com.ibm.academia.apirest.services;
 
-import java.util.Optional;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -10,37 +8,33 @@ import com.ibm.academia.apirest.entities.Carrera;
 import com.ibm.academia.apirest.repositories.CarreraRepository;
 
 @Service
-public class CarreraDAOImpl implements CarreraDAO
+public class CarreraDAOImpl extends GenericoDAOImpl<Carrera, CarreraRepository> implements CarreraDAO 
 {
 	@Autowired
-	private CarreraRepository carreraRepository;
-	
-	@Override
-	@Transactional(readOnly = true)
-	public Optional<Carrera> buscarPorId(Integer id) 
+	public CarreraDAOImpl(CarreraRepository repository) 
 	{
-		return carreraRepository.findById(id);
-	}
-
-	@Override
-	@Transactional
-	public Carrera guardar(Carrera carrera) 
-	{
-		return carreraRepository.save(carrera);
+		super(repository);
 	}
 
 	@Override
 	@Transactional(readOnly = true)
-	public Iterable<Carrera> buscarTodos() 
+	public Iterable<Carrera> findCarrerasByNombreContains(String nombre) 
 	{
-		return carreraRepository.findAll();
-	}
-	
-	@Override
-	@Transactional
-	public void eliminarPorId(Integer id) 
-	{
-		carreraRepository.deleteById(id);
+		return repository.findCarrerasByNombreContains(nombre);
 	}
 
+	@Override
+	@Transactional(readOnly = true)
+	public Iterable<Carrera> findCarrerasByNombreContainsIgnoreCase(String nombre) 
+	{
+		
+		return repository.findCarrerasByNombreContainsIgnoreCase(nombre);
+	}
+
+	@Override
+	@Transactional(readOnly = true)
+	public Iterable<Carrera> findCarrerasByCantidadAniosAfter(Integer cantidadAnios) 
+	{
+		return repository.findCarrerasByCantidadAniosAfter(cantidadAnios);
+	}
 }

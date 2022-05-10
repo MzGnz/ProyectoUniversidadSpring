@@ -8,6 +8,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
+import com.ibm.academia.apirest.entities.Alumno;
+import com.ibm.academia.apirest.entities.Direccion;
 import com.ibm.academia.apirest.entities.Persona;
 import com.ibm.academia.apirest.services.AlumnoDAO;
 
@@ -22,7 +24,7 @@ public class UniversidadesRestApplication
 		SpringApplication.run(UniversidadesRestApplication.class, args);
 	}
 
-	@Bean
+	/*@Bean
 	public CommandLineRunner runner() 
 	{	
 		return args ->{
@@ -33,7 +35,7 @@ public class UniversidadesRestApplication
 			System.out.println(personaGuardada.toString());*/
 			
 			/*List<Persona> alumnos = (List<Persona>) alumnoDao.buscarTodos();
-			alumnos.forEach(System.out::println);*/
+			alumnos.forEach(System.out::println);
 		};
-	}
+	}*/
 }

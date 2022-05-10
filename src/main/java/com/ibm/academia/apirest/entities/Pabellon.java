@@ -5,8 +5,8 @@ import java.util.Date;
 import java.util.Objects;
 import java.util.Set;
 
-import javax.persistence.AttributeOverrides;
 import javax.persistence.AttributeOverride;
+import javax.persistence.AttributeOverrides;
 import javax.persistence.Column;
 import javax.persistence.Embedded;
 import javax.persistence.Entity;
@@ -24,8 +24,8 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
-@Getter
 @Setter
+@Getter
 @NoArgsConstructor
 @ToString
 @Entity
@@ -58,7 +58,8 @@ public class Pabellon implements Serializable
 	@OneToMany(mappedBy = "pabellon", fetch = FetchType.LAZY)
 	private Set<Aula> aulas;
 	
-	public Pabellon(Integer id, Double metrosCuadrados, String nombre, Direccion direccion) {
+	public Pabellon(Integer id, Double metrosCuadrados, String nombre, Direccion direccion) 
+	{
 		this.id = id;
 		this.metrosCuadrados = metrosCuadrados;
 		this.nombre = nombre;
