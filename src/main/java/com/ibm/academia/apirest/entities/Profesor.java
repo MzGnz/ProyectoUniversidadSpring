@@ -13,6 +13,8 @@ import javax.persistence.ManyToMany;
 import javax.persistence.PrimaryKeyJoinColumn;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -34,6 +36,8 @@ public class Profesor extends Persona
 			joinColumns = @JoinColumn(name = "profesor_id"),
 			inverseJoinColumns = @JoinColumn(name = "carrera_id")
 	)
+	
+	@JsonIgnoreProperties({"hibernateLazyInitializer","profesores"})
 	private Set<Carrera> carreras;
 	
 	public Profesor(Integer id, String nombre, String apellido, String dni, Direccion direccion, BigDecimal sueldo) 
