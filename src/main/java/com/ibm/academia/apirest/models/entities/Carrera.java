@@ -1,4 +1,4 @@
-package com.ibm.academia.apirest.entities;
+package com.ibm.academia.apirest.models.entities;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -31,8 +31,8 @@ import lombok.Setter;
 @Getter
 @NoArgsConstructor
 @Entity
-//@Table(name = "carreras",schema =  "universidad")
-@Table(name = "carreras")
+@Table(name = "carreras",schema =  "universidad")
+//@Table(name = "carreras")
 public class Carrera implements Serializable
 {	
 	@Id

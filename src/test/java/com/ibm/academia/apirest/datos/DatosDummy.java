@@ -2,13 +2,13 @@ package com.ibm.academia.apirest.datos;
 
 import java.math.BigDecimal;
 
-import com.ibm.academia.apirest.entities.Alumno;
-import com.ibm.academia.apirest.entities.Carrera;
-import com.ibm.academia.apirest.entities.Direccion;
-import com.ibm.academia.apirest.entities.Empleado;
-import com.ibm.academia.apirest.entities.Persona;
-import com.ibm.academia.apirest.entities.Profesor;
 import com.ibm.academia.apirest.enums.TipoEmpleado;
+import com.ibm.academia.apirest.models.entities.Alumno;
+import com.ibm.academia.apirest.models.entities.Carrera;
+import com.ibm.academia.apirest.models.entities.Direccion;
+import com.ibm.academia.apirest.models.entities.Empleado;
+import com.ibm.academia.apirest.models.entities.Persona;
+import com.ibm.academia.apirest.models.entities.Profesor;
 
 public class DatosDummy 
 {

@@ -1,20 +1,11 @@
 package com.ibm.academia.apirest;
 
-import java.util.List;
-import java.util.Optional;
+public class Comandos 
+{
+	
+}
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.CommandLineRunner;
-import org.springframework.stereotype.Component;
-
-import com.ibm.academia.apirest.entities.Alumno;
-import com.ibm.academia.apirest.entities.Carrera;
-import com.ibm.academia.apirest.entities.Persona;
-import com.ibm.academia.apirest.services.AlumnoDAO;
-import com.ibm.academia.apirest.services.CarreraDAO;
-import com.ibm.academia.apirest.services.PersonaDAO;
-
-@Component
+/*@Component
 public class Comandos implements CommandLineRunner
 {	
 	@Autowired
@@ -95,7 +86,6 @@ public class Comandos implements CommandLineRunner
 		carrerasPorAnio.forEach(System.out::println);*/
 		
 		/*Optional<Persona> persona = personaDAO.buscarPorId(2);
-		System.out.println(persona.toString());*/
+		System.out.println(persona.toString());
 		
-	}
-}
+	}}*/
