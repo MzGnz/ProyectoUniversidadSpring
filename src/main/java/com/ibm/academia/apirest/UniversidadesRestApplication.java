@@ -16,8 +16,8 @@ import com.ibm.academia.apirest.services.AlumnoDAO;
 @SpringBootApplication
 public class UniversidadesRestApplication 
 {
-	@Autowired
-	private AlumnoDAO alumnoDao;
+	/*@Autowired
+	private AlumnoDAO alumnoDao;*/
 	
 	public static void main(String[] args) 
 	{
@@ -32,9 +32,9 @@ public class UniversidadesRestApplication
 			Persona alumno = new Alumno(null,"Mario","Moreno","323766723",direccion);
 			
 			Persona personaGuardada = alumnoDao.guardar(alumno);
-			System.out.println(personaGuardada.toString());*/
+			System.out.println(personaGuardada.toString());
 			
-			/*List<Persona> alumnos = (List<Persona>) alumnoDao.buscarTodos();
+			List<Persona> alumnos = (List<Persona>) alumnoDao.buscarTodos();
 			alumnos.forEach(System.out::println);
 		};
 	}*/

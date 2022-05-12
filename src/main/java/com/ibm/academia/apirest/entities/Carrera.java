@@ -25,14 +25,14 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import lombok.NonNull;
 import lombok.Setter;
 
 @Setter
 @Getter
 @NoArgsConstructor
 @Entity
-@Table(name = "carreras",schema =  "universidad")
+//@Table(name = "carreras",schema =  "universidad")
+@Table(name = "carreras")
 public class Carrera implements Serializable
 {	
 	@Id
