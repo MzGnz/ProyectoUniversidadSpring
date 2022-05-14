@@ -9,6 +9,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
+import javax.persistence.FetchType;
 import javax.persistence.ForeignKey;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -39,7 +40,7 @@ public class Aula implements Serializable
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 	
-	@Column(name = "numero_aula", nullable = false)
+	@Column(name = "numero_aula",nullable = false)
 	private Integer numeroAula;
 	
 	@Column(name = "medidas")
@@ -58,7 +59,7 @@ public class Aula implements Serializable
 	@Column(name = "fecha_modificacion")
 	private Date fechaModificacion;
 	
-	@ManyToOne(optional = true, cascade = {CascadeType.PERSIST,CascadeType.MERGE})
+	@ManyToOne(optional = true, cascade = {CascadeType.PERSIST,CascadeType.MERGE},fetch = FetchType.LAZY)
 	@JoinColumn(name = "pabellon_id",foreignKey = @ForeignKey(name = "FK_PABELLON_ID"))
 	private Pabellon pabellon;
 	
