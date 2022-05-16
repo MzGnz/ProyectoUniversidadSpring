@@ -16,8 +16,8 @@ import com.ibm.academia.apirest.exceptions.NotFoundException;
 import com.ibm.academia.apirest.models.entities.Persona;
 import com.ibm.academia.apirest.services.PersonaDAO;
 
-@RestController
-@RequestMapping("/profesor")
+/*@RestController
+@RequestMapping("/profesor")*/
 public class ProfesorController 
 {
 	@Autowired

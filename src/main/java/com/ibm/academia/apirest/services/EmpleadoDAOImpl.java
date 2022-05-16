@@ -9,7 +9,7 @@ import com.ibm.academia.apirest.models.entities.Persona;
 import com.ibm.academia.apirest.repositories.PersonaRepository;
 
 @Service
-public class EmpleadoDAOImpl extends PersonaDAOImpl implements EmpleadoDAO
+public class EmpleadoDAOImpl { /*extends PersonaDAOImpl implements EmpleadoDAO
 {
 	@Autowired
 	public EmpleadoDAOImpl(@Qualifier("repositorioEmpleados")PersonaRepository repository)
@@ -27,5 +27,5 @@ public class EmpleadoDAOImpl extends PersonaDAOImpl implements EmpleadoDAO
 		empleadoncontrado.setDireccion(empleado.getDireccion());
 		empleadoActualizado = repository.save(empleadoncontrado);
 		return empleadoActualizado;
-	}
+	}*/
 }

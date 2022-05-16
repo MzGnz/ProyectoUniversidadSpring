@@ -1,0 +1,64 @@
+2022-05-13 18:54:22,009 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(13)-127.0.0.1] Application shutdown requested.
+2022-05-13 18:54:22,028 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [RMI TCP Connection(13)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-13 18:54:22,030 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(13)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2022-05-13 18:54:22,032 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(13)-127.0.0.1] HikariPool-1 - Shutdown completed.
+2022-05-13 18:54:43,431 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.3.Final
+2022-05-13 18:54:43,433 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting UniversidadesRestApplication using Java 17.0.2 on MacBook-Pro-de-Javier.local with PID 9249 (/Users/javieralejandrocalixtocano/Documents/workspace-spring-tool-suite-4-4.14.1.RELEASE/SpringBootProyect/target/classes started by javieralejandrocalixtocano in /Users/javieralejandrocalixtocano/Documents/workspace-spring-tool-suite-4-4.14.1.RELEASE/SpringBootProyect)
+2022-05-13 18:54:43,433 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2022-05-13 18:54:43,451 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-13 18:54:43,451 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-13 18:54:43,820 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-13 18:54:43,845 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 22 ms. Found 5 JPA repository interfaces.
+2022-05-13 18:54:44,113 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9081 (http)
+2022-05-13 18:54:44,118 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9081"]
+2022-05-13 18:54:44,118 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-05-13 18:54:44,118 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-13 18:54:44,148 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-05-13 18:54:44,148 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 696 ms
+2022-05-13 18:54:44,207 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-13 18:54:44,227 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.33
+2022-05-13 18:54:44,284 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-13 18:54:44,331 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2022-05-13 18:54:44,379 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2022-05-13 18:54:44,392 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-05-13 18:54:44,805 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2022-05-13 18:54:44,805 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] constraint "uk_26lyngkrhv906vv5b6gklx7rj" of relation "carreras" does not exist, skipping
+2022-05-13 18:54:44,809 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2022-05-13 18:54:44,809 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] constraint "uk_hflupgtjl8ap6mkbvul5m7klk" of relation "pabellones" does not exist, skipping
+2022-05-13 18:54:44,812 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2022-05-13 18:54:44,812 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] constraint "uk_nnr7w7h44crpy3wdqmk1724hp" of relation "personas" does not exist, skipping
+2022-05-13 18:54:44,847 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-13 18:54:44,851 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-13 18:54:45,155 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-13 18:54:45,261 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-05-13 18:54:45,363 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9081"]
+2022-05-13 18:54:45,372 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9081 (http) with context path ''
+2022-05-13 18:54:45,536 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started UniversidadesRestApplication in 2.263 seconds (JVM running for 3.017)
+2022-05-13 18:55:11,561 INFO org.apache.juli.logging.DirectJDKLog [http-nio-9081-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-13 18:55:11,561 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9081-exec-2] Initializing Servlet 'dispatcherServlet'
+2022-05-13 18:55:11,562 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9081-exec-2] Completed initialization in 1 ms
+2022-05-13 18:58:07,234 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-4] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-13 18:58:07,237 INFO com.zaxxer.hikari.HikariDataSource [Thread-4] HikariPool-1 - Shutdown initiated...
+2022-05-13 18:58:07,240 INFO com.zaxxer.hikari.HikariDataSource [Thread-4] HikariPool-1 - Shutdown completed.
+2022-05-13 18:58:07,456 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting UniversidadesRestApplication using Java 17.0.2 on MacBook-Pro-de-Javier.local with PID 9249 (/Users/javieralejandrocalixtocano/Documents/workspace-spring-tool-suite-4-4.14.1.RELEASE/SpringBootProyect/target/classes started by javieralejandrocalixtocano in /Users/javieralejandrocalixtocano/Documents/workspace-spring-tool-suite-4-4.14.1.RELEASE/SpringBootProyect)
+2022-05-13 18:58:07,456 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2022-05-13 18:58:07,588 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-13 18:58:07,596 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 7 ms. Found 5 JPA repository interfaces.
+2022-05-13 18:58:07,941 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9081 (http)
+2022-05-13 18:58:07,941 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9081"]
+2022-05-13 18:58:07,942 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-05-13 18:58:07,942 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-13 18:58:07,946 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-05-13 18:58:07,946 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 487 ms
+2022-05-13 18:58:07,963 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-13 18:58:07,966 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Starting...
+2022-05-13 18:58:07,976 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Start completed.
+2022-05-13 18:58:07,976 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-05-13 18:58:08,145 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-13 18:58:08,145 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-13 18:58:08,237 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-13 18:58:08,286 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-05-13 18:58:08,340 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9081"]
+2022-05-13 18:58:08,341 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9081 (http) with context path ''
+2022-05-13 18:58:08,420 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started UniversidadesRestApplication in 1.145 seconds (JVM running for 205.904)
+2022-05-13 18:58:08,422 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
