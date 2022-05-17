@@ -14,15 +14,15 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.ibm.academia.apirest.exceptions.NotFoundException;
 import com.ibm.academia.apirest.models.entities.Persona;
-import com.ibm.academia.apirest.services.PersonaDAO;
+import com.ibm.academia.apirest.services.EmpleadoDAO;
 
-/*@RestController
-@RequestMapping("/empleado")*/
+@RestController
+@RequestMapping("/empleado")
 public class EmpleadoController 
 {
 	@Autowired
 	@Qualifier("empleadoDAOImpl")
-	private PersonaDAO empleadoDao;
+	private EmpleadoDAO empleadoDao;
 	
 	@PostMapping
 	public ResponseEntity<?> crearEmpleado(@RequestBody Persona empleado)

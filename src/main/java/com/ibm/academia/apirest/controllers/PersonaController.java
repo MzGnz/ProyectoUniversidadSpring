@@ -3,6 +3,7 @@ package com.ibm.academia.apirest.controllers;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -19,6 +20,7 @@ import com.ibm.academia.apirest.services.PersonaDAO;
 public class PersonaController 
 {
 	@Autowired
+	@Qualifier
 	private PersonaDAO personaDAO;
 	
 	@GetMapping("/nombre-apellido")

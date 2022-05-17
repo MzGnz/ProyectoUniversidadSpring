@@ -5,10 +5,9 @@ import org.springframework.stereotype.Repository;
 
 import com.ibm.academia.apirest.models.entities.Persona;
 
-//@Repository
+@Repository("repositorioProfesores")
 public interface ProfesorRepository extends PersonaRepository 
 {
-	//@Query("select a from Profesor a where a.carrera.nombre = ?1")
-//	@Query("select a from Profesor a join fetch a.carrera c where c.nombre = ?1")
-//	public Iterable<Persona> buscarProfesorPorNombreCarrera(String carrera);
+	@Query("select a from Profesor a join fetch a.carrera c where c.nombre = ?1")
+	public Iterable<Persona> buscarProfesorPorNombreCarrera(String carrera);
 }

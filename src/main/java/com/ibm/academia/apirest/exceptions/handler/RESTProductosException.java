@@ -12,7 +12,7 @@ import com.ibm.academia.apirest.exceptions.BadRequestException;
 import com.ibm.academia.apirest.exceptions.NotFoundException;
 
 @ControllerAdvice
-public class UniversidadRESTException 
+public class RESTProductosException 
 {
 	@ExceptionHandler(value = BadRequestException.class)
 	public ResponseEntity<Object> formatoInvalidoException(BadRequestException exception) 
