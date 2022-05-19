@@ -8,8 +8,8 @@ import com.ibm.academia.apirest.enums.TipoEmpleado;
 import com.ibm.academia.apirest.models.entities.Persona;
 
 @Repository("repositorioEmpleados")
-public interface EmpleadoRepository extends PersonaRepository /*CrudRepository<Persona, Integer>*/
+public interface EmpleadoRepository extends PersonaRepository 
 {
-	@Query("select a from Empleado a where a.tipo_empleado = ?1")
-	public Iterable<Persona> buscarEmpleadoPorTipoEmpleado(TipoEmpleado tipoempleado);
+	@Query("select a from Empleado a where a.tipoEmpleado = ?1")
+	public Iterable<Persona> findByProfesor(TipoEmpleado tipoempleado);
 }

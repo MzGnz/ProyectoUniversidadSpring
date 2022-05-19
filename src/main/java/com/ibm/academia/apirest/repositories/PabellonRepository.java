@@ -1,5 +1,6 @@
 package com.ibm.academia.apirest.repositories;
 
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
@@ -9,7 +10,9 @@ import com.ibm.academia.apirest.models.entities.Pabellon;
 @Repository
 public interface PabellonRepository extends CrudRepository<Pabellon, Integer>
 {
-	public Iterable<Pabellon> buscarPabellonPorDireccion (Direccion direccion);
+	@Query(value = "select * from universidad.pabellones where localidad = ?1", nativeQuery = true)
+	public Iterable<Pabellon> findPabellonByDireccion(Direccion direccion);
 	
-	public Iterable<Pabellon> buscarPabellonPorNombre (String nombre);
+	@Query("select p from Pabellon p where p.nombre = ?1 ")
+	public Iterable<Pabellon> findPabellonByNombre(String nombre);
 }

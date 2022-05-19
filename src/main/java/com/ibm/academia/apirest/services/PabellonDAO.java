@@ -7,8 +7,8 @@ import com.ibm.academia.apirest.models.entities.Pabellon;
 
 public interface PabellonDAO extends GenericoDAO<Pabellon>
 {
-	public Optional<Pabellon> buscarPabellonPorDireccion(Direccion direccion);
+	/*public Optional<Pabellon> buscarPabellonPorDireccion(Direccion direccion);
 	
-	public Optional<Pabellon> buscarPabellonPorNombre(String nombre);
+	public Optional<Pabellon> buscarPabellonPorNombre(String nombre);*/
 
 }

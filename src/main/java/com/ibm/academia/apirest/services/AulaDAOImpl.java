@@ -19,8 +19,8 @@ public class AulaDAOImpl extends GenericoDAOImpl<Aula, AulaRepository> implement
 	{
 		super(repository);
 	}
-
-	@Override
+}
+	/*@Override
 	@Transactional
 	public Aula actualizar(Aula aulaEncontrada, Aula aula) {
 		Aula aulaActualizado = null;
@@ -50,4 +50,4 @@ public class AulaDAOImpl extends GenericoDAOImpl<Aula, AulaRepository> implement
 		return null;
 	}
 
-}
+}*/

@@ -5,7 +5,7 @@ import com.ibm.academia.apirest.models.entities.Persona;
 
 public interface EmpleadoDAO extends PersonaDAO
 {
-	public Iterable<Persona> buscarEmpleadoPorTipoEmpleado(TipoEmpleado tipoEmpleado);
-	public Persona actualizarEmpleado(Persona empleadoEncontrado, Persona empleado);
+	/*public Iterable<Persona> buscarEmpleadoPorTipoEmpleado(TipoEmpleado tipoEmpleado);
+	public Persona actualizarEmpleado(Persona empleadoEncontrado, Persona empleado);*/
 
 }

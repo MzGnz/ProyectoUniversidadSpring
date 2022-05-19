@@ -8,6 +8,6 @@ import com.ibm.academia.apirest.models.entities.Persona;
 @Repository("repositorioProfesores")
 public interface ProfesorRepository extends PersonaRepository 
 {
-	@Query("select a from Profesor a join fetch a.carrera c where c.nombre = ?1")
-	public Iterable<Persona> buscarProfesorPorNombreCarrera(String carrera);
+	@Query("select p from Profesor p join fetch p.carreras c where c.nombre = ?1")
+	public Iterable<Persona> findProfesorByNombreCarrera(String carrera);
 }

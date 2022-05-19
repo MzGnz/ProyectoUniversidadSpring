@@ -8,7 +8,7 @@ import org.springframework.data.repository.NoRepositoryBean;
 
 import com.ibm.academia.apirest.models.entities.Persona;
 
-@NoRepositoryBean
+@NoRepositoryBean//("repositorioPersonas")
 public interface PersonaRepository extends CrudRepository<Persona, Integer>
 {
 	@Query("select p from Persona p where p.nombre = ?1 and p.apellido = ?2")

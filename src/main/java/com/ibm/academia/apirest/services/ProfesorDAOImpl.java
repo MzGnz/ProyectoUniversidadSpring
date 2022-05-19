@@ -17,8 +17,8 @@ public class ProfesorDAOImpl extends PersonaDAOImpl implements ProfesorDAO
 	{
 		super(repository);
 	}
-
-	@Override
+}
+	/*@Override
 	public Persona actualizarProfesor(Persona profesorEncontrado, Persona profesor) {
 		Persona profesorActualizado = null;
 		profesorEncontrado.setNombre(profesor.getNombre());
@@ -41,4 +41,4 @@ public class ProfesorDAOImpl extends PersonaDAOImpl implements ProfesorDAO
 		return null;
 	}
 	
-}
+}*/

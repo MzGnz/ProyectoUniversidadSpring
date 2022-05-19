@@ -15,12 +15,12 @@ import com.ibm.academia.apirest.exceptions.NotFoundException;
 import com.ibm.academia.apirest.models.entities.Persona;
 import com.ibm.academia.apirest.services.PersonaDAO;
 
-@RestController
-@RequestMapping("/persona")
+/*@RestController
+@RequestMapping("/persona")*/
 public class PersonaController 
 {
-	@Autowired
-	@Qualifier
+	/*@Autowired
+	@Qualifier//("personaDAOImpl")
 	private PersonaDAO personaDAO;
 	
 	@GetMapping("/nombre-apellido")
@@ -32,5 +32,5 @@ public class PersonaController
 			throw new NotFoundException(String.format("No se encontró a la persona con npmbre %s y apellido %s", nombre,apellido));
 		
 		return new ResponseEntity<Persona>(oPersona.get(), HttpStatus.OK);
-	}
+	}*/
 }

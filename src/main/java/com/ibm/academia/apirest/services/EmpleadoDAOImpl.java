@@ -18,8 +18,8 @@ public class EmpleadoDAOImpl extends PersonaDAOImpl implements EmpleadoDAO
 	{
 		super(repository);
 	}
-	
-	@Override
+}	
+	/*@Override
 	@Transactional
 	public Persona actualizarEmpleado(Persona empleadoencontrado, Persona empleado) 
 	{
@@ -37,4 +37,4 @@ public class EmpleadoDAOImpl extends PersonaDAOImpl implements EmpleadoDAO
 		// TODO Auto-generated method stub
 		return null;
 	}	
-}
+}*/

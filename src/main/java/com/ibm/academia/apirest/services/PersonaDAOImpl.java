@@ -2,12 +2,14 @@ package com.ibm.academia.apirest.services;
 
 import java.util.Optional;
 
+import org.springframework.beans.factory.annotation.Qualifier;
+
 import com.ibm.academia.apirest.models.entities.Persona;
 import com.ibm.academia.apirest.repositories.PersonaRepository;
 
 public class PersonaDAOImpl extends GenericoDAOImpl<Persona, PersonaRepository> implements PersonaDAO 
 {
-	public PersonaDAOImpl(PersonaRepository repository) 
+	public PersonaDAOImpl(/*@Qualifier("repositotioPersonas") */PersonaRepository repository) 
 	{
 		super(repository);
 	}

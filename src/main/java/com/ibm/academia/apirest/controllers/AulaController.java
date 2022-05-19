@@ -55,7 +55,7 @@ public class AulaController
 		return new ResponseEntity<Aula>(oAula.get(),HttpStatus.OK);
 	}
 	
-	@PutMapping("/upd/aulaId/{aulaId}")
+	/*@PutMapping("/upd/aulaId/{aulaId}")
 	public ResponseEntity<?> actualizarAula(@PathVariable Integer aulaId, @RequestBody Aula aula)
 	{
 		Optional<Aula> oAula = aulaDAO.buscarPorId(aulaId);
@@ -66,10 +66,10 @@ public class AulaController
 		Aula aulaActualizada = ((AulaDAO)aulaDAO).actualizar(oAula.get(), aula);
 		return new ResponseEntity<Aula>(aulaActualizada, HttpStatus.OK);
 		
-	}
+	}*/
 	
 	@DeleteMapping("/aulaId/{aulaId}")
-	public ResponseEntity<?> eliminarAlumno(@PathVariable Integer aulaId)
+	public ResponseEntity<?> eliminarAula(@PathVariable Integer aulaId)
 	{
 		
 		Optional<Aula> oAula = aulaDAO.buscarPorId(aulaId);
